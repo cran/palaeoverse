@@ -1,36 +1,43 @@
 test_that("axis_geo() works", {
   expect_doppelganger("axis_geo()", function() {
-    plot(x = coral_div$stage_age, y = coral_div$n, axes = FALSE,
-         xlim = c(250, 0), xlab = NA, ylab = "Diversity")
+    plot(x = reef_df$interval_mid_ma, y = reef_df$p_lat,
+         axes = FALSE, type = "p", pch = 20,
+         xlim = c(542, 0), xlab = NA, ylab = "Paleolatitude")
     box()
 
     axis(side = 2)
-    axis_geo(side = 1, intervals = "periods")
+    axis_geo(side = 1, intervals = periods)
+    title(xlab = "Time (Ma)", line = 4)
   })
 })
 
-test_that("axis_geo() works with old GTS scale", {
-  expect_doppelganger("axis_geo() with old GTS scale", function() {
-    plot(x = coral_div$stage_age, y = coral_div$n, axes = FALSE,
-         xlim = c(250, 0), xlab = NA, ylab = "Diversity")
+test_that("axis_geo() works with time_bins()", {
+  expect_doppelganger("axis_geo() with time_bins() scale", function() {
+    plot(x = reef_df$interval_mid_ma, y = reef_df$p_lat,
+         axes = FALSE, type = "p", pch = 20,
+         xlim = c(542, 0), xlab = NA, ylab = "Paleolatitude")
     box()
 
     axis(side = 2)
-    axis_geo(side = 1, intervals = time_bins(rank = "period"))
+    axis_geo(side = 1, intervals = time_bins(rank = "period",
+                                             scale = "GTS2020"))
+    title(xlab = "Time (Ma)", line = 4)
   })
 })
 
 test_that("axis_geo() works with multiple scales", {
   expect_doppelganger("axis_geo() with multiple scales", function() {
-    par(mar = c(6.6, 4.1, 4.1, 2.1))
-    plot(x = coral_div$stage_age, y = coral_div$n, axes = FALSE,
-         xlim = c(250, 0), xlab = NA, ylab = "Diversity")
+    par(mar = c(7.6, 4.1, 4.1, 2.1))
+    plot(x = reef_df$interval_mid_ma, y = reef_df$p_lat,
+         axes = FALSE, type = "p", pch = 20,
+         xlim = c(542, 0), xlab = NA, ylab = "Paleolatitude")
     box()
 
     axis(side = 2)
-    axis_geo(side = 1, intervals = list("stages", "periods"),
-             tick_at = seq(0, 250, 25), lab = list(FALSE, TRUE),
+    axis_geo(side = 1, intervals = list(stages, periods),
+             tick_at = seq(0, 500, 50), lab = list(FALSE, TRUE),
              abbr = FALSE)
+    title(xlab = "Time (Ma)", line = 6)
   })
 })
 
@@ -41,19 +48,44 @@ test_that("axis_geo() can be used on multiple sides", {
          xlab = NA, ylab = NA)
     box()
 
-    axis_geo(side = 1, intervals = list("epochs", "periods"),
+    axis_geo(side = 1, intervals = list(epochs, periods),
              height = list(.05, .03), tick_at = seq(0, 100, 25))
     axis_geo(side = 2, height = list(.03, .05),
-             intervals = list("epochs", "periods"), bord_col = "purple",
+             intervals = list(epochs, periods), bord_col = "purple",
              center_end_labels = list(FALSE, TRUE), exact = TRUE)
     axis_geo(side = 3, height = list(.03, .05),
-             intervals = list("epochs", "periods"), abbr = FALSE,
+             intervals = list(epochs, periods), abbr = FALSE,
              skip = c("Paleogene", "Holocene", "Pleistocene", "Pliocene",
                       "Quaternary"), lab_col = list("blue", "purple"))
     axis_geo(side = 4, height = list(.04, .03),
-             intervals = list("epochs", "periods"),
+             intervals = list(epochs, periods),
              fill = list("lightblue", "yellow"),
              lty = list("solid", "dashed"), exact = TRUE, round = 1)
+  })
+})
+
+test_that("axis_geo() works with phylogenies", {
+  skip_if_not_installed("phytools")
+  library(phytools)
+  data(mammal.tree)
+  expect_doppelganger("axis_geo() with ultrametric tree", function() {
+    plot(mammal.tree)
+    axis_geo(phylo = TRUE)
+  })
+  expect_doppelganger("axis_geo() with backwards ultrametric tree", function() {
+    plot(mammal.tree, direction = "l")
+    axis_geo_phylo()
+  })
+  skip_if_not_installed("paleotree")
+  library(paleotree)
+  data(RaiaCopesRule)
+  expect_doppelganger("axis_geo() with fossil tree", function() {
+    plot(ceratopsianTreeRaia)
+    axis_geo_phylo()
+  })
+  expect_doppelganger("axis_geo() with downwards fossil tree", function() {
+    plot(ceratopsianTreeRaia, direction = "d")
+    axis_geo(side = 2, phylo = TRUE)
   })
 })
 

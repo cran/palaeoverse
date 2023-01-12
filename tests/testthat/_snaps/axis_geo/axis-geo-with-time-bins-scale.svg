@@ -4125,19 +4125,6 @@
 <rect x='188.21' y='502.56' width='26.51' height='22.18' style='stroke-width: 0.75; fill: #B3E1B6;' />
 <rect x='143.39' y='502.56' width='44.82' height='22.18' style='stroke-width: 0.75; fill: #009270;' />
 <rect x='83.48' y='502.56' width='59.91' height='22.18' style='stroke-width: 0.75; fill: #7FA056;' />
-<rect x='-17.81' y='502.56' width='101.28' height='22.18' style='stroke-width: 0.75; fill: #FED96A;' />
-<rect x='-109.39' y='502.56' width='91.59' height='22.18' style='stroke-width: 0.75; fill: #FECC5C;' />
-<rect x='-411.09' y='502.56' width='301.70' height='22.18' style='stroke-width: 0.75; fill: #FEBF4E;' />
-<rect x='-626.59' y='502.56' width='215.50' height='22.18' style='stroke-width: 0.75; fill: #FED99A;' />
-<rect x='-842.09' y='502.56' width='215.50' height='22.18' style='stroke-width: 0.75; fill: #FDCC8A;' />
-<rect x='-1057.59' y='502.56' width='215.50' height='22.18' style='stroke-width: 0.75; fill: #FDC07A;' />
-<rect x='-1273.08' y='502.56' width='215.50' height='22.18' style='stroke-width: 0.75; fill: #F875A7;' />
-<rect x='-1542.46' y='502.56' width='269.37' height='22.18' style='stroke-width: 0.75; fill: #F76898;' />
-<rect x='-1811.83' y='502.56' width='269.37' height='22.18' style='stroke-width: 0.75; fill: #F75B89;' />
-<rect x='-2027.33' y='502.56' width='215.50' height='22.18' style='stroke-width: 0.75; fill: #F74F7C;' />
-<rect x='-2350.57' y='502.56' width='323.25' height='22.18' style='stroke-width: 0.75; fill: #FAA7C8;' />
-<rect x='-2781.57' y='502.56' width='431.00' height='22.18' style='stroke-width: 0.75; fill: #F881B5;' />
-<rect x='-3212.57' y='502.56' width='431.00' height='22.18' style='stroke-width: 0.75; fill: #F668B2;' />
 <line x1='59.04' y1='524.74' x2='59.04' y2='502.56' style='stroke-width: 0.75;' />
 <line x1='689.76' y1='524.74' x2='689.76' y2='502.56' style='stroke-width: 0.75;' />
 <text x='652.60' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='48.72px' lengthAdjust='spacingAndGlyphs'>Neogene</text>
@@ -4151,18 +4138,6 @@
 <text x='201.46' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='40.02px' lengthAdjust='spacingAndGlyphs'>Silurian</text>
 <text x='165.80' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='57.37px' lengthAdjust='spacingAndGlyphs'>Ordovician</text>
 <text x='113.43' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='52.03px' lengthAdjust='spacingAndGlyphs'>Cambrian</text>
-<text x='71.26' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='54.04px' lengthAdjust='spacingAndGlyphs'>Ediacaran</text>
-<text x='-63.60' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='61.38px' lengthAdjust='spacingAndGlyphs'>Cryogenian</text>
-<text x='-260.24' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='36.69px' lengthAdjust='spacingAndGlyphs'>Tonian</text>
-<text x='-518.84' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='40.70px' lengthAdjust='spacingAndGlyphs'>Stenian</text>
-<text x='-734.34' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='46.04px' lengthAdjust='spacingAndGlyphs'>Ectasian</text>
-<text x='-949.84' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='60.03px' lengthAdjust='spacingAndGlyphs'>Calymmian</text>
-<text x='-1165.33' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='54.71px' lengthAdjust='spacingAndGlyphs'>Statherian</text>
-<text x='-1407.77' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='48.69px' lengthAdjust='spacingAndGlyphs'>Orosirian</text>
-<text x='-1677.14' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='50.04px' lengthAdjust='spacingAndGlyphs'>Rhyacian</text>
-<text x='-1919.58' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='44.03px' lengthAdjust='spacingAndGlyphs'>Siderian</text>
-<text x='-2188.95' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='108.75px' lengthAdjust='spacingAndGlyphs'>Neoarchean System</text>
-<text x='-2566.07' y='517.78' text-anchor='middle' style='font-size: 12.00px; font-family: sans;' textLength='116.09px' lengthAdjust='spacingAndGlyphs'>Mesoarchean System</text>
 <line x1='59.04' y1='524.74' x2='689.76' y2='524.74' style='stroke-width: 0.75;' />
 </g>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHw1NzYuMDA=)'>

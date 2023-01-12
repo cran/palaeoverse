@@ -3,6 +3,9 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/palaeoverse-community/palaeoverse/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/palaeoverse-community/palaeoverse/actions/workflows/R-CMD-check.yaml)
 [![codecov](https://codecov.io/gh/palaeoverse-community/palaeoverse/branch/main/graph/badge.svg?token=HQQO2CRIKT)](https://app.codecov.io/gh/palaeoverse-community/palaeoverse)
+[![CRAN status](https://www.r-pkg.org/badges/version/palaeoverse)](https://CRAN.R-project.org/package=palaeoverse)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/palaeoverse)](https://cran.r-project.org/package=palaeoverse)
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/ThePalaeoverse.svg?style=social&label=Follow%20%40ThePalaeoverse)](https://twitter.com/ThePalaeoverse)
 <!-- badges: end -->
 
 `palaeoverse` is an R package developed by palaeobiologists, for palaeobiologists.
@@ -25,18 +28,31 @@ The aim of `palaeoverse` is to generate a community-driven software package of g
 
 # Installation
 
+The stable version of `palaeoverse` can be installed from CRAN using:
+
+```r
+install.packages("palaeoverse")
+```
+
 The development version of `palaeoverse` can be installed via GitHub using:
 
-```
+```r
+# install.packages("devtools")
 devtools::install_github("palaeoverse-community/palaeoverse")
 ```
 
 # How to contribute?
-If you are interested in contributing to the `palaeoverse` R package, you can do so by following these [guidelines](https://palaeoverse.org/CONTRIBUTING.html). We have also adopted a set of [standards and structure](https://palaeoverse.org/articles/structure-and-standards.html) to follow for contributing to the project. If you would like to contribute to `palaeoverse`, we strongly advise reading this document.
+If you are interested in contributing to the `palaeoverse` R package, you can do so by following these [guidelines](https://palaeoverse.palaeoverse.org/CONTRIBUTING.html). We have also adopted a set of [standards and structure](https://palaeoverse.palaeoverse.org/articles/structure-and-standards.html) to follow for contributing to the project. If you would like to contribute to `palaeoverse`, we strongly advise reading this document.
 
 # Code of Conduct
 
-As with any community project, society, or meeting we feel it is important to established some expectations of behaviour in the `palaeoverse` community. Please read our [code of conduct](https://palaeoverse.org/CODE_OF_CONDUCT.html), and reach out if you ever face any issues. Everyone has the right to live and work in a harassment-free environment.
+As with any community project, society, or meeting we feel it is important to established some expectations of behaviour in the `palaeoverse` community. Please read our [code of conduct](https://palaeoverse.palaeoverse.org/CODE_OF_CONDUCT.html), and reach out if you ever face any issues. Everyone has the right to live and work in a harassment-free environment.
+
+# Citation
+
+A [pre-print publication](https://doi.org/10.31223/X5Z94Q) is now available for the palaeoverse R package. Please feel free to leave any comments you may have over at EarthArXiv. We welcome all feedback. If you use the palaeoverse R package in your work, please cite as:
+
+Jones, L.A., Gearty, W., Allen, B.J., Eichenseer, K., Dean, C.D., Galván S., Kouvari, M., Godoy, P.L., Nicholl, C., Dillon, E.M., Flannery-Sutherland, J.T., Chiarenza, A.A. 2022. palaeoverse: a community-driven R package to support palaeobiological analyses. *EarthArXiv*. doi: [10.31223/X5Z94Q](https://doi.org/10.31223/X5Z94Q).
 
 <p align="left">
 
