@@ -1,6 +1,6 @@
 test_that("axis_geo() works", {
   expect_doppelganger("axis_geo()", function() {
-    plot(x = reef_df$interval_mid_ma, y = reef_df$p_lat,
+    plot(x = reef_df$interval_mid_ma, y = reef_df$lat,
          axes = FALSE, type = "p", pch = 20,
          xlim = c(542, 0), xlab = NA, ylab = "Paleolatitude")
     box()
@@ -13,7 +13,7 @@ test_that("axis_geo() works", {
 
 test_that("axis_geo() works with time_bins()", {
   expect_doppelganger("axis_geo() with time_bins() scale", function() {
-    plot(x = reef_df$interval_mid_ma, y = reef_df$p_lat,
+    plot(x = reef_df$interval_mid_ma, y = reef_df$lat,
          axes = FALSE, type = "p", pch = 20,
          xlim = c(542, 0), xlab = NA, ylab = "Paleolatitude")
     box()
@@ -28,7 +28,7 @@ test_that("axis_geo() works with time_bins()", {
 test_that("axis_geo() works with multiple scales", {
   expect_doppelganger("axis_geo() with multiple scales", function() {
     par(mar = c(7.6, 4.1, 4.1, 2.1))
-    plot(x = reef_df$interval_mid_ma, y = reef_df$p_lat,
+    plot(x = reef_df$interval_mid_ma, y = reef_df$lat,
          axes = FALSE, type = "p", pch = 20,
          xlim = c(542, 0), xlab = NA, ylab = "Paleolatitude")
     box()
@@ -70,22 +70,22 @@ test_that("axis_geo() works with phylogenies", {
   data(mammal.tree)
   expect_doppelganger("axis_geo() with ultrametric tree", function() {
     plot(mammal.tree)
-    axis_geo(phylo = TRUE)
+    axis_geo(intervals = epochs, phylo = TRUE)
   })
   expect_doppelganger("axis_geo() with backwards ultrametric tree", function() {
     plot(mammal.tree, direction = "l")
-    axis_geo_phylo()
+    axis_geo_phylo(intervals = epochs)
   })
   skip_if_not_installed("paleotree")
   library(paleotree)
   data(RaiaCopesRule)
   expect_doppelganger("axis_geo() with fossil tree", function() {
     plot(ceratopsianTreeRaia)
-    axis_geo_phylo()
+    axis_geo_phylo(intervals = epochs)
   })
   expect_doppelganger("axis_geo() with downwards fossil tree", function() {
     plot(ceratopsianTreeRaia, direction = "d")
-    axis_geo(side = 2, phylo = TRUE)
+    axis_geo(side = 2, intervals = epochs, phylo = TRUE)
   })
 })
 
