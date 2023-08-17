@@ -1,6 +1,6 @@
 Package: palaeoverse
 Title: Prepare and Explore Data for Palaeobiological Analyses
-Version: 1.2.0
+Version: 1.2.1
 Authors@R: c(
     person(given = "Lewis A.", family = "Jones", email = "LewisAlan.Jones@uvigo.es",
       role = c("aut", "cre"), comment = c(ORCID = "0000-0003-3902-8986")),
@@ -35,7 +35,7 @@ Description: Provides functionality to support data preparation and exploration 
   data cleaning, binning (time and space), exploration, summarisation and 
   visualisation. Reference datasets (i.e. Geological Time Scales <https://stratigraphy.org/chart>)
   and auxiliary functions are also provided. Details can be found in:
-  Jones et al., (2022) <doi:10.31223/X5Z94Q>.
+  Jones et al., (2023) <doi: 10.1111/2041-210X.14099>.
 License: GPL (>= 3)
 Language: en-GB
 Encoding: UTF-8
@@ -53,7 +53,7 @@ URL: https://palaeoverse.palaeoverse.org,
         https://palaeoverse.org
 BugReports: https://github.com/palaeoverse-community/palaeoverse/issues
 NeedsCompilation: no
-Packaged: 2023-04-18 14:33:12 UTC; lewis
+Packaged: 2023-08-16 21:04:44 UTC; lewis
 Author: Lewis A. Jones [aut, cre] (<https://orcid.org/0000-0003-3902-8986>),
   William Gearty [aut] (<https://orcid.org/0000-0003-0076-3262>),
   Bethany J. Allen [aut] (<https://orcid.org/0000-0003-0282-6407>),
@@ -70,4 +70,4 @@ Author: Lewis A. Jones [aut, cre] (<https://orcid.org/0000-0003-3902-8986>),
   A. Alessandro Chiarenza [ctb] (<https://orcid.org/0000-0001-5525-6730>)
 Maintainer: Lewis A. Jones <LewisAlan.Jones@uvigo.es>
 Repository: CRAN
-Date/Publication: 2023-04-18 15:00:02 UTC
+Date/Publication: 2023-08-17 07:50:02 UTC

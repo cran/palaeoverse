@@ -100,6 +100,7 @@ Lewis A. Jones, Kilian Eichenseer & Christopher D. Dean
 }
 
 \examples{
+\dontrun{
 # load occurrence data
 data("tetrapods")
 # Check taxon names alphabetically
@@ -107,5 +108,5 @@ ex1 <- tax_check(taxdf = tetrapods, name = "genus", dis = 0.1)
 # Check taxon names by group
 ex2 <- tax_check(taxdf = tetrapods, name = "genus",
                  group = "family", dis = 0.1)
-
+}
 }
